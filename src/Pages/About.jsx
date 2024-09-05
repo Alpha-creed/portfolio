@@ -22,7 +22,7 @@ import {
   ModalCloseButton,
   useDisclosure,
 } from '@chakra-ui/react';
-
+import user from '../assets/Me.jpg'
 const About = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [modalImage, setModalImage] = useState('');
@@ -56,12 +56,12 @@ const About = () => {
         {/* Centering the content vertically and horizontally */}
         <VStack spacing={6} align="center">
           <Image
-            src='https://bit.ly/dan-abramov'
-            alt='Dan Abramov'
+          src={user}
+            alt='Frederick Enchill'
             borderRadius="full"
             boxSize="150px"
             cursor="pointer"
-            onClick={() => handleImageClick('https://bit.ly/dan-abramov')}
+            onClick={() => handleImageClick(user)}
           />
           <Heading as="h2" size="md" marginBottom="20px">
             FREDERICK ENCHILL<br />

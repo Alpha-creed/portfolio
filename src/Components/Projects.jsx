@@ -67,7 +67,7 @@ const Projects = () => {
 
             {/* Card 2 */}
             <GridItem>
-              <Card maxW="3xl" onClick={() => navigate("#")}>
+              <Card maxW="3xl" onClick={() => navigate("/details")}>
                 <Image
                   objectFit="cover"
                   src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8&auto=format&fit=crop&w=1770&q=80"
@@ -96,7 +96,8 @@ const Projects = () => {
 
             {/* Card 4 */}
             <GridItem>
-              <Card maxW="3xl" onClick={() => navigate("#")}>
+            <Card maxW="3xl" onClick={() => window.location.href = "https://creedjs.netlify.app/"}
+    cursor="pointer">
                 <Image
                   objectFit="cover"
                   src={quiz}
